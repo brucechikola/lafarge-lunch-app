@@ -1,3 +1,41 @@
+#ABOUT THIS PROJECT
+A UI builder template that will make it easier to build different kinds of react application using  available components.
+You are also able to add your custom components to the builder incase the ones provided looks limited to your preferences
+The UI builder the following configurations
+
+1. Operates React Redux Toolkit
+2. Dynamic Routing
+3. Layouts
+    Authenticated Layouts
+    UnAuthenticated Layouts
+    Empty Layout
+    Custom Layouts
+    
+4. Tables:
+    Basic Tables
+    Sortable Tables
+    Searchable Tables
+    Paginated Tables
+
+5. Charts
+6. Icons
+7. UI Components
+8. Mock Data
+9. Pre-designed UI
+10. Starter
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
