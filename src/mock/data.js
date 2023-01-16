@@ -66,3 +66,12 @@ export const payrollData = [
     { "year": 2022, "month": "December", "gross": 1843.59, "net": 729.56, "alloances": 1237.5, "deductions": 95.24 },
     { "year": 2023, "month": "January", "gross": 3598.57, "net": 247.97, "alloances": 2218.99, "deductions": 35.73 }
 ]
+
+export const departmentData = [
+    { "department": "Support", "total_employee": 26, "total_projects": 42, "total_expense": 1546.26, "total_income": 2569.16 },
+    { "department": "Training", "total_employee": 18, "total_projects": 74, "total_expense": 1002.83, "total_income": 3847.14 },
+    { "department": "Legal", "total_employee": 7, "total_projects": 89, "total_expense": 1642.44, "total_income": 3701.92 },
+    { "department": "Sales", "total_employee": 13, "total_projects": 51, "total_expense": 1670.65, "total_income": 3736.58 },
+    { "department": "Sales", "total_employee": 28, "total_projects": 94, "total_expense": 1476.74, "total_income": 2118.74 },
+    { "department": "Human Resources", "total_employee": 30, "total_projects": 28, "total_expense": 1223.75, "total_income": 2665.73 }
+]
