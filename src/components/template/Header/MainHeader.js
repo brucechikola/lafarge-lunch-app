@@ -39,7 +39,7 @@ export default function MainHeader() {
                         <div className='flex items-center justify-center p-3 bg-white mr-3 rounded-b-[20px]'>
                             <Logo style={{ width: 90 }} />
                         </div>
-                        <h2 className='text-white font-bold'>Crime Hotspot Knowledge</h2>
+                        <h2 className='text-white font-bold'>Crime Hotspot Knowledge Base System</h2>
                     </div>
                     <div className='flex items-center justify-center relative transition relative'>
 
