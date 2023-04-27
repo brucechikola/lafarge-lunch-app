@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from '../../../../components/shared/Card/Card'
-import { FaUserCircle, FaBriefcase } from 'react-icons/fa';
-import { BsArrowUpShort, BsArrowDownShort, BsCalendarCheckFill } from 'react-icons/bs';
+import Card from 'components/shared/Card/Card'
+import { FaUserCircle, FaBriefcase, FaMusic, FaMoneyBill, FaBusinessTime } from 'react-icons/fa';
+import { BsArrowUpShort, BsArrowDownShort, BsCalendarCheckFill, BsCheck } from 'react-icons/bs';
 export default function Statistics() {
     const Statistic = (props) => {
         const {
@@ -41,31 +41,31 @@ export default function Statistics() {
     return (
         <div className='w-full grid grid-cols-3 gap-x-5'>
             <Statistic
-                title="Total Employees"
+                title="Total Streams"
                 titleValue={48}
-                subTitle="Active"
+                subTitle="Last Month"
                 subTitleValue={27}
-                icon={<FaUserCircle size={25} />}
+                icon={<FaMusic size={25} />}
                 bg='bg-indigo-100'
                 color='text-indigo-800'
                 grow={true}
             />
             <Statistic
-                title="Pending Payslips"
+                title="Total Revenue"
                 titleValue={27}
-                subTitle="Approved"
+                subTitle="Last month"
                 subTitleValue={15}
-                icon={<FaBriefcase size={25} />}
+                icon={<FaMoneyBill size={25} />}
                 bg='bg-blue-100'
                 color='text-blue-800'
                 grow={true}
             />
             <Statistic
-                title="Leave Applications"
+                title="Total Pending Subscriptions"
                 titleValue={0}
                 subTitle="Approved"
                 subTitleValue={0}
-                icon={<BsCalendarCheckFill size={25} />}
+                icon={<FaBusinessTime size={25} />}
                 bg='bg-emerald-100'
                 color='text-[#1ABFA9]'
             />

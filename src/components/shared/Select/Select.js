@@ -1,24 +1,23 @@
-import React from 'react'
-import { Unique } from '../../../functions/common'
-
-export default function Select(props) {
-    const { className, style, options, value, onChange } = props
-    return (
-        <select
+import { Select } from 'antd';
+const App = ({ id, value, placeholder = "Search options", className, options, label, labelClassName, onChange }) => (
+    <div className={`w-full flex flex-col`}>
+        {
+            label && <label className={labelClassName}>{label}</label>
+        }
+        <Select
+            className={`${className} outline-none rounded-0`}
+            showSearch
+            placeholder={placeholder}
+            optionFilterProp="children"
             value={value}
+            filterOption={(input, option) => (option?.label ?? '').includes(input)}
+            filterSort={(optionA, optionB) =>
+                (optionA?.label ?? '').toLowerCase().localeCompare((optionB?.label ?? '').toLowerCase())
+            }
+            options={options}
             onChange={onChange}
-            style={style}
-            className={`form-control w-full bg-white min-w-[150px] min-h-[35px] px-3 border border-1 border-gray-200 text-slate-600 rounded-md transition ease-in-out focus:outline-none ${className}`}
-        >
-            {
-                options.length > 0 &&
-                options.map(option => <option key={Unique()} value={option.value}>{option.label}</option>)
-            }
-            {
-                options.length === 0 &&
-                <options key={Unique()} value="">No options available!</options>
-            }
-
-        </select>
-    )
-}
+            id={id}
+        />
+    </div>
+);
+export default App;

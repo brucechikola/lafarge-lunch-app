@@ -1,13 +1,17 @@
 import React from 'react'
 
 export default function Card(props) {
+    const { className, style, children, radius = 5 } = props
     return (
         <div
-            className={`w-full h-full border rounded-md p-4 ${props.className}`}
-            style={props.style}
+            className={`w-full h-full border  p-4 ${className}`}
+            style={{
+                borderRadius: radius,
+                ...style
+            }}
         >
             {
-                props.children
+                children
             }
         </div>
     )

@@ -1,21 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit'
-
 export const sessionSlice = createSlice({
     name: 'auth/session',
     initialState: {
-        token: '19921hfjimd3k',
-        signedIn: true,
+        token: '',
+        signedIn: false,
+        user: {},
         roles: [],
     },
     reducers: {
-        onSignInSuccess: (state, action) => {
+        storeCredentials: (state, action) => {
             state.signedIn = true
             state.token = action.payload.token
             state.user = action.payload.user
         },
-        onSignOutSuccess: (state) => {
+        signOut: (state) => {
             state.signedIn = false
             state.token = ''
+            state.roles = []
+            // localStorage.clear()
+            window.location.reload()
         },
         setToken: (state, action) => {
             state.token = action.payload.token
@@ -26,6 +29,11 @@ export const sessionSlice = createSlice({
     },
 })
 
-export const { onSignInSuccess, onSignOutSuccess, setToken, setRoles } = sessionSlice.actions
+export const {
+    storeCredentials,
+    signOut,
+    setToken,
+    setRoles
+} = sessionSlice.actions
 
 export default sessionSlice.reducer

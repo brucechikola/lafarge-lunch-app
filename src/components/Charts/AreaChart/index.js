@@ -1,2 +1,2 @@
-import AreaChart from "./AreaChart";
+import AreaChart from "AreaChart";
 export default AreaChart

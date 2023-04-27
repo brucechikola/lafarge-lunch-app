@@ -8,7 +8,9 @@ import TH from '../components/TH'
 import THead from '../components/THead'
 import TR from '../components/TR'
 export default function BasicTable(props) {
-    const columns = useMemo(() => props.columns, [])
+    const columns = useMemo(() =>
+        props.columns
+        , [])
     const data = props.data
     const {
         getTableProps,
@@ -64,7 +66,7 @@ export default function BasicTable(props) {
     // )
 
     return (
-        <Table tableProps={getTableProps()} className="rounded w-full">
+        <Table tableProps={getTableProps()} className={`rounded w-full ${props.className}`}>
             <THead key={Unique()} className="text-gray-600">
                 {
                     headerGroups.map((headerGroup) => (

@@ -6,7 +6,7 @@ export default function Index() {
     return (
         <>
             <MainHeader />
-            <SubHeader />
+            {/* <SubHeader /> */}
         </>
     )
 }

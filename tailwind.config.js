@@ -51,8 +51,16 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      colors: {
+        defaultcolor: '#332785'
+      },
       boxShadow: {
-        'default': 'rgba(149, 157, 165, 0.1) 0px 8px 10px'
+        'default': 'rgba(149, 157, 165, 0.1) 0px 8px 10px',
+        'dark': 'rgba(149, 157, 165, 0.2) 0px 8px 10px',
+        'darker': 'rgba(0, 0, 0, 0.15) 0px 5px 15px'
+      },
+      borderBottom: {
+        'b-bottom': '1px #EEEDF3 solid'
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -76,6 +84,7 @@ module.exports = {
 
       const colorMap = Object.keys(colors)
         .map(color => ({
+
           [`.border-t-${color}`]: { borderTopColor: colors[color] },
           [`.border-r-${color}`]: { borderRightColor: colors[color] },
           [`.border-b-${color}`]: { borderBottomColor: colors[color] },

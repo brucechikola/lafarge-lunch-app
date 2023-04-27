@@ -1,4 +1,4 @@
-import { PERSIST_STORE_NAME } from '../constants'
+import { PERSIST_STORE_NAME } from 'constants'
 import rootReducer from './rootReducer'
 import { configureStore } from '@reduxjs/toolkit'
 import { persistStore, persistReducer } from 'redux-persist'

@@ -1,27 +1,27 @@
-export const expenseList = [
+export const streamSmmary = [
     {
-        title: 'Electricity',
-        value: 333.55
+        title: 'Ndiwenu',
+        value: 300
     },
     {
-        title: 'Electricity',
-        value: 333.55
+        title: 'Abakachimfya',
+        value: 1455
     },
     {
-        title: 'Electricity',
-        value: 333.55
+        title: 'Twalaya',
+        value: 266
     },
     {
-        title: 'Transport to Lusaka',
-        value: 1255.58
+        title: 'Umusumba',
+        value: 777
     },
     {
-        title: 'Tables & Chairs',
-        value: 3455.55
+        title: 'Bakwesu',
+        value: 999
     },
     {
-        title: '5 Desktop Computers',
-        value: 2555.58
+        title: 'Yawe',
+        value: 574
     },
 ]
 
@@ -48,14 +48,57 @@ export const summaryChart = {
 }
 
 // table data
-export const employeeData = [
-    { "id": 1, "avata": "img/others/avata1.webp", "first_name": "Somerset", "last_name": "Pimblotte", "email": "spimblotte0@illinois.edu", "gender": "Male", "status": "Active" },
-    { "id": 2, "avata": "img/others/avata2.jpeg", "first_name": "Lindsey", "last_name": "Gerrens", "email": "lgerrens1@squarespace.com", "gender": "Female", "status": "Stand By" },
-    { "id": 3, "avata": "img/others/avata3.jpeg", "first_name": "Tyson", "last_name": "Axelby", "email": "taxelby2@time.com", "gender": "Male", "status": "Active" },
-    { "id": 4, "avata": "img/others/avata4.jpeg", "first_name": "Theo", "last_name": "Megroff", "email": "tmegroff3@elpais.com", "gender": "Male", "status": "Active" },
-    { "id": 5, "avata": "img/others/avata3.jpeg", "first_name": "Gideon", "last_name": "Upchurch", "email": "gupchurch4@eventbrite.com", "gender": "Male", "status": "On Leave" },
-    { "id": 6, "avata": "img/others/avata2.jpeg", "first_name": "Heriberto", "last_name": "O' Driscoll", "email": "hodriscoll5@mac.com", "gender": "Male", "status": "Fired" },
-    { "id": 7, "avata": "img/others/avata4.jpeg", "first_name": "Marlena", "last_name": "Bellenger", "email": "mbellenger6@wix.com", "gender": "Female", "status": "Active" },
+export const pendingSubscriptions = [
+    {
+        "sn": 1,
+        "txn": 106140,
+        "names": "Gohier",
+        "package": "Jordon",
+        "network": "F",
+        "amount": 67.23,
+        "status": "F",
+        "action": "M"
+    },
+    {
+        "sn": 2,
+        "txn": 103303,
+        "names": "Cuchey",
+        "package": "Delaney",
+        "network": "M",
+        "amount": 97.03,
+        "status": "M",
+        "action": "F"
+    },
+    {
+        "sn": 3,
+        "txn": 106332,
+        "names": "Briztman",
+        "package": "Charlton",
+        "network": "F",
+        "amount": 78.45,
+        "status": "F",
+        "action": "F"
+    },
+    {
+        "sn": 4,
+        "txn": 102418,
+        "names": "Gingle",
+        "package": "Dicky",
+        "network": "M",
+        "amount": 95.43,
+        "status": "F",
+        "action": "M"
+    },
+    {
+        "sn": 5,
+        "txn": 107217,
+        "names": "Hollingsbee",
+        "package": "Patrice",
+        "network": "M",
+        "amount": 60.08,
+        "status": "F",
+        "action": "F"
+    }
 ]
 
 
@@ -74,4 +117,113 @@ export const departmentData = [
     { "department": "Sales", "total_employee": 13, "total_projects": 51, "total_expense": 1670.65, "total_income": 3736.58 },
     { "department": "Sales", "total_employee": 28, "total_projects": 94, "total_expense": 1476.74, "total_income": 2118.74 },
     { "department": "Human Resources", "total_employee": 30, "total_projects": 28, "total_expense": 1223.75, "total_income": 2665.73 }
+]
+
+
+export const mockModule = {
+    "modules": [
+        {
+            "module_name": "Premium Accounting",
+            "module": "Accounts",
+            "sub_modules": [
+                {
+                    "module": "Assets",
+                    "module_title": "Asset Management",
+                    "module_price": 7500
+                },
+                {
+                    "module": "Stock",
+                    "module_title": "Stock Management",
+                    "module_price": 4000
+                }
+            ],
+            "module_price": "11500",
+            "icon_title": "accounts"
+        },
+        {
+            "module_name": "Asset Management",
+            "module": "Assets",
+            "sub_modules": [],
+            "module_price": "2500",
+            "icon_title": "assets"
+        },
+        {
+            "module_name": "Full HR",
+            "module": "HR",
+            "sub_modules": [
+                {
+                    "module": "Payroll",
+                    "module_title": "Payroll",
+                    "module_price": 500
+                }
+            ],
+            "module_price": "5500",
+            "icon_title": "hr"
+        }
+    ],
+    "common_settings": {
+        "name": "Common Settings",
+        "owner": "Administrator",
+        "modified": "2022-11-14 02:42:09.118095",
+        "modified_by": "Administrator",
+        "docstatus": 0,
+        "idx": "0",
+        "price_per_user": 50,
+        "tot_rate": 4,
+        "total_number_of_free_users": 4,
+        "discount": 0,
+        "vat_rate": 16,
+        "apply_discount_on_first_month": 0,
+        "apply_vat": 0,
+        "apply_discount_on_first_year": 1,
+        "apply_discount_on_users": 1,
+        "enable_recurrying_annual_discount": 0,
+        "doctype": "Common Settings"
+    }
+}
+
+
+export const pricingData = [
+    {
+        // "sn": 1,
+        "module": "Full Accounting",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 746889.01
+    },
+    {
+        // "sn": 2,
+        "module": "HR",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 15899.56
+    },
+    {
+        // "sn": 3,
+        "module": "Payroll",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 535284.21
+    },
+    {
+        // "sn": 4,
+        "module": "Project Management",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 931446.62
+    },
+    {
+        // "sn": 5,
+        "module": "Stock Management",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 608089.93
+    },
+    {
+        // "sn": 6,
+        "module": "Assets Management",
+        "frequency": 'Annually',
+        "users": 2,
+        "amount": 873420.45
+    }
 ]

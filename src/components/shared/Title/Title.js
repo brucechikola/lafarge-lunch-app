@@ -1,14 +1,14 @@
 import React from 'react'
 
 export default function Title(props) {
+    const { className, wrapperClassName, subClass, style, title, subTitle } = props
     return (
         <div
-            className={`flex flex-col`}
-            style={props.style}
+            className={`flex flex-col ${wrapperClassName}`}
         >
-            <h3 className={`font-bold ${props.className}`} style={props.style}>{props.title}</h3>
+            <h3 className={`font-bold ${className}`} style={style}>{title}</h3>
             {
-                props.subTitle && <span className='text-gray-500 text-md'>{props.subTitle}</span>
+                subTitle && <span className={`${subClass} text-md`}>{subTitle}</span>
             }
         </div>
     )

@@ -1,5 +1,5 @@
 import ApexCharts from 'apexcharts'
-import { summaryChart } from '../../../mock/data';
+import { summaryChart } from 'mock/data';
 export default function RenderAreaChart(params) {
     var options = {
         chart: {

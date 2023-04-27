@@ -1,4 +1,4 @@
-export function Unique(length = 20) {
+export function Unique(length = 30) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_';
     var charactersLength = characters.length;
@@ -7,6 +7,7 @@ export function Unique(length = 20) {
     }
     return result;
 }
+
 
 export const IsObjectEmpty = (obj) => {
     return Object.keys(obj).length === 0

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
-    layout: 'admin-layout',
+    layout: 'auth-layout',
 }
 export const layoutSlice = createSlice({
     name: 'layoutSlice',
