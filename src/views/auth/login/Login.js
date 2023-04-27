@@ -45,7 +45,7 @@ export default function Login() {
     }
     const { values, touched, handleChange, handleSubmit, errors } = useFormik({
         initialValues: {
-            email: 'chikolabruce23@gmail.com',
+            email: 'lacksonbanda@gmail.com',
             password: 'young377529',
         },
         onSubmit
