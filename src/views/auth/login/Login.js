@@ -56,7 +56,7 @@ export default function Login() {
             <div className="w-[50%] h-[100%] bg-defaultcolor absolute right-0 bg-coverd"></div>
             <Card className="w-[500px] h-[600px] bg-white shadow-dark border-0 flex items-center justify-center flex-col z-[5]">
                 <Logo width={140} />
-                <h3 className='font-bold my-10 text-[20px] text-slate-700 mt-3'>Crime Hotspot Knowledge</h3>
+                <h3 className='font-bold my-10 text-[20px] text-slate-700 mt-3'>Crime Hotspot Knowledge Base System</h3>
                 <form onSubmit={handleSubmit} className="w-[83%] mt-10">
                     <h5 className='w-full items-center justify-center text-red-500 text-center'>{resp_error}</h5>
                     <div className="w-full grid grid-cols-1 gap-4">
