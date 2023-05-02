@@ -16,7 +16,7 @@ import { FaIdCard, FaMailBulk, FaPhoneAlt, FaRegMoneyBillAlt, FaUser } from 'rea
 import { GiCompanionCube } from 'react-icons/gi'
 import PaginatedTable from 'components/Tables/PaginatedTable'
 export default function Dashboard() {
-    const [pg, setPg] = useState(true)
+    const [pg, setPg] = useState(false)
     const cols = [
         {
             Header: 'S/N',
