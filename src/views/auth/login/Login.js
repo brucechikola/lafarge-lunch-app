@@ -45,30 +45,30 @@ export default function Login() {
     }
     const { values, touched, handleChange, handleSubmit, errors } = useFormik({
         initialValues: {
-            email: 'lacksonbanda@gmail.com',
-            password: 'young377529',
+            employee_number: '1234567890',
+            password: '377529',
         },
         onSubmit
     })
     return (
         <Container className="flex items-center justify-center h-[100vh]">
             <div className="w-[100px] h-[100px] absolute bg-red-100 rounded-md"></div>
-            <div className="w-[50%] h-[100%] bg-defaultcolor absolute right-0 bg-coverd"></div>
-            <Card className="w-[500px] h-[600px] bg-white shadow-dark border-0 flex items-center justify-center flex-col z-[5]">
-                <Logo width={140} />
-                <h3 className='font-bold my-10 text-[20px] text-slate-700 mt-3'>Crime Hotspot Knowledge Base System</h3>
+            {/* <div className="w-[50%] h-[100%] bg-defaultcolor absolute right-0 bg-coverd"></div> */}
+            <Card className="w-[500px] h-[500px] bg-white shadow-dark border-0 flex items-center justify-center flex-col z-[5]">
+                <Logo width={140} className='mb-2' />
+                <h5 className='font-bold my-10 text-[20px] text-slate-700 mt-10'>Chilanga Cement</h5>
                 <form onSubmit={handleSubmit} className="w-[83%] mt-10">
                     <h5 className='w-full items-center justify-center text-red-500 text-center'>{resp_error}</h5>
                     <div className="w-full grid grid-cols-1 gap-4">
                         <InputField
                             onChange={handleChange}
                             id="email"
-                            value={values.email}
+                            value={values.employee_number}
                             labelClassName="text-black text-[15px]"
-                            label="Email"
-                            placeholder="Enter your email"
+                            label="Employee number"
+                            placeholder="Enter your employee number"
                             wrapperClass="w-full"
-                            className="text-black h-[50px]"
+                            className="text-black h-[50px] text-[13px]"
                             required
                             type="text"
                         />
@@ -85,7 +85,7 @@ export default function Login() {
                             type="password"
                         />
                         <div className="w-full h-full flex items-end justify-end mt-2">
-                            <Button type="submit" disabled={loading ? true : false} onClick={handleSubmit} className="h-[45px] w-full border-0 hover:bg-indigo-900 bg-defaultcolor text-white font-bold" >
+                            <Button type="submit" disabled={loading ? true : false} onClick={handleSubmit} className="h-[45px] w-full border-0 bg-lafarge hover:bg-lafarge text-white font-bold" >
                                 <span className="mr-3">{loading ? 'Please Wait' : 'Submit'}</span>
                                 <ClipLoader
                                     color='#ffffff'

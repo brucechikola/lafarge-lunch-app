@@ -7,8 +7,8 @@ export default class Authentication {
             "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgyNTk4MTE3LCJleHAiOjE2ODUxOTAxMTd9.kOs195ctGx9CtwCHbF3K_T80Pn54KMPfB52FD2h1VmM",
             "user": {
                 "id": 1,
-                "username": "Lackson Banda",
-                "email": "lacksonbanda@gmail.com",
+                "username": "Example User Names",
+                "email": "usernames@example.com",
                 "provider": "local",
                 "confirmed": true,
                 "blocked": false,
@@ -16,8 +16,9 @@ export default class Authentication {
                 "updatedAt": "2023-04-23T01:19:20.380Z",
                 "gender": "Male",
                 "contact_number": null,
-                "first_name": "Lackson",
-                "last_name": "Banda"
+                "first_name": "Example",
+                "last_name": "Unsernames",
+                employee_number: '1234567890'
             }
 
         }

@@ -59,7 +59,7 @@ const InputField = forwardRef((props, ref) => {
                         onChange={onChange}
                         value={value}
                         placeholder={placeholder}
-                        className={`${className} text-black p-3 h-[150px] px-8 rounded-md min-h-[80px] w-full`} />
+                        className={`${className} text-black p-3 h-[150px] px-5 rounded-md min-h-[50px] w-full`} />
                 }
             </div>
         </div >

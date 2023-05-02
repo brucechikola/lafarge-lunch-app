@@ -52,7 +52,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        defaultcolor: '#332785'
+        defaultcolor: '#332785',
+        lafarge: '#00915a'
       },
       boxShadow: {
         'default': 'rgba(149, 157, 165, 0.1) 0px 8px 10px',
