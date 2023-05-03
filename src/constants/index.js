@@ -1,4 +1,4 @@
-export const LOGO_PATH = 'img/logo/logo.png';
+export const LOGO_PATH = 'img/logo/logo.webp';
 export const IMG_PATH = 'img/others/'
 export const PERSIST_STORE_NAME = 'rds'
 export const UNAUTHENTICATED_PATH = 'views/home'
